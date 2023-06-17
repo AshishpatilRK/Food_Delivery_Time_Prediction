@@ -3,6 +3,7 @@ numpy
 flask
 seaborn
 scikit-learn
-
+missingno
+geopy
 
 -e .

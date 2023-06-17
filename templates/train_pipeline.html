@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>Training Pipeline Results</title>
+    <style>
+        body {
+            background-color: #ddc4ea;
+        }
+        
+        h2 {
+            color: #13033b;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        pre {
+            background-color: #e5ecec;
+            border: 1px solid #090707;
+            padding: 10px;
+            font-size: 18px;
+            color: #5f0505;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <h2>Best Model Name: {{ best_model_name }}</h2>
+    <h2>Best Model Score: {{ best_model_score.round(0) }}</h2>
+    <h2>Model Report:</h2>
+    <pre>{{ model_report }}</pre>
+</body>
+</html>
